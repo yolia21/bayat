@@ -53,9 +53,9 @@ export default function MigrationMap({ selectedLocationId, onSelectLocation }: M
 
   // Define paths for migrations (lat, lng coords)
   const pathWestward: [number, number][] = locations
-    .filter((loc) => ["china", "khorasan", "caucasus", "anatolia", "syria"].includes(loc.id))
+    .filter((loc) => ["china", "turkmenistan", "khorasan", "caucasus", "iraq", "syria", "anatolia"].includes(loc.id))
     .sort((a, b) => {
-      const order = ["china", "khorasan", "caucasus", "anatolia", "syria"];
+      const order = ["china", "turkmenistan", "khorasan", "caucasus", "iraq", "syria", "anatolia"];
       return order.indexOf(a.id) - order.indexOf(b.id);
     })
     .map((loc) => [loc.lat, loc.lng]);

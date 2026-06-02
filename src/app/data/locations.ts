@@ -14,6 +14,18 @@ export const locations: LocationMarker[] = [
     empires: ["Oghuz Yabgu State", "Early Mongol Factions"]
   },
   {
+    id: "turkmenistan",
+    title: "Turkmenistan",
+    subtitle: "Amu Darya & Merv Region (Bozok Lands)",
+    lat: 39.1500,
+    lng: 63.2667,
+    historicalPeriod: "10th - 11th Century",
+    description: "Following their consolidation in Central Asia, the Bayat clan settled along the Amu Darya river and Merv regions of Turkmenistan. Part of the Bozok division, they were highly prestigious, immortalized in the ancient Turkmen proverb: 'The Kayı and Bayat tribes shall lead the people.'",
+    significance: "Ancestral Oghuz homeland and the base for the westward Seljuk expansion into Iran, Iraq, and Anatolia.",
+    branches: ["Bozok Bayat", "Turkmen Bayat"],
+    empires: ["Oghuz Yabgu State", "Seljuk Empire"]
+  },
+  {
     id: "khorasan",
     title: "Khorasan / Nishapur",
     subtitle: "Safavid Border Guardians",
@@ -36,6 +48,18 @@ export const locations: LocationMarker[] = [
     significance: "Deeply impacted the demography of Azerbaijan; key figures in the Shirvan region and the Shusha/Karabakh khanates emerged from this branch.",
     branches: ["Kara-Bayat", "Ak-Bayat"],
     empires: ["Safavid Empire", "Shirvanshahs", "Karabakh Khanate"]
+  },
+  {
+    id: "iraq",
+    title: "Iraq",
+    subtitle: "Kirkuk Region (Mesopotamian Settlements)",
+    lat: 35.4681,
+    lng: 44.3922,
+    historicalPeriod: "11th - 16th Century",
+    description: "Following the Seljuk conquests, a major division of the Bayats settled in northern Iraq, primarily Kirkuk, Erbil, and Mosul. By the 16th century, Ottoman records registered 13 distinct Bayat clans here. The famous 16th-century classical poet Fuzûlî belonged to this Iraqi Bayat branch.",
+    significance: "Layed the foundation for the Mesopotamian Turkic presence. Provided military commanders to the Aq Qoyunlu, Safavid, and Ottoman states.",
+    branches: ["Iraqi Bayat", "Šām Bayātī"],
+    empires: ["Seljuk Empire", "Aq Qoyunlu", "Ottoman Empire"]
   },
   {
     id: "anatolia",
@@ -111,6 +135,16 @@ export const timelineEvents: TimelineEvent[] = [
     locationId: "china"
   },
   {
+    id: "t_turkmenistan",
+    year: "1030 AD",
+    title: "Consolidation in Turkmenistan",
+    subtitle: "Amu Darya & Merv Settlements",
+    description: "The Bayats establish massive settlements along the Amu Darya river and Merv in Turkmenistan. They become a dominant political faction of the Oghuz Bozok branch, driving early Seljuk governance.",
+    branch: "Bozok Bayat",
+    empire: "Oghuz Yabgu State / Early Seljuks",
+    locationId: "turkmenistan"
+  },
+  {
     id: "t2",
     year: "1040 AD",
     title: "Seljuk Conquests & Westward Migration",
@@ -161,6 +195,16 @@ export const timelineEvents: TimelineEvent[] = [
     locationId: "caucasus"
   },
   {
+    id: "t_iraq",
+    year: "1534 AD",
+    title: "Ottoman Iraq & 13 Clans of Kirkuk",
+    subtitle: "Fuzuli's Classical Poetry Era",
+    description: "With the Ottoman conquest of Iraq, the Bayats of Kirkuk are recorded in imperial registers as comprising 13 distinct clans. During this era, the legendary poet Fuzûlî, belonging to the Iraqi Bayat branch, writes his classical divans.",
+    branch: "Iraqi Bayat",
+    empire: "Ottoman Empire",
+    locationId: "iraq"
+  },
+  {
     id: "t5",
     year: "1550 AD",
     title: "Anatolian Pehlivanlı Autonomy",
@@ -203,9 +247,9 @@ export const branchesInfo: ClanBranch[] = [
     id: "sam-bayati",
     name: "Šām Bayātī & Pahlavānlū",
     translation: "Syrian Bayat & Heroic Clan",
-    regions: ["Aleppo (Syria)", "Kilis (Turkey)", "Caucasus"],
-    history: "Living along the borderlands of Syria and Turkey, the Šām Bayātī were a vital border defense force. In close partnership with the Pehlivanlı branch, they maintained control over trade caravans and pilgrim routes.",
-    significance: "Played a pivotal role in the buffer zones of the Mamluk-Ottoman conflicts and Dulkadir Emirate governance."
+    regions: ["Aleppo (Syria)", "Kirkuk (Iraq)", "Caucasus"],
+    history: "Living along the borderlands of Iraq, Syria, and Turkey, the Šām Bayātī and Iraqi Bayats were vital frontier guardians. In close partnership with the Pehlivanlı branch, they maintained control over trade caravans, borders, and pilgrim routes.",
+    significance: "Played a pivotal role in the buffer zones of the Mamluk-Ottoman conflicts, Aq Qoyunlu control, and Dulkadir Emirate governance."
   },
   {
     id: "bhayat",
