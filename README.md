@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Bayat Chronicle
 
-## Getting Started
+**The Bayat Chronicle** is a premium, interactive historical tracking website and digital archive dedicated to tracing the migrations, branches, and imperial footprint of the historical Oghuz Turkic **Bayat (and Bhayat)** clan.
 
-First, run the development server:
+Designed with a clean, modern archival theme, the platform blends elegant Serif typography (Playfair Display) and warm ivory backgrounds with interactive GIS mapping to visualize a millennium of history.
+
+---
+
+## 🌟 Core Features
+
+- **100% Free Live Map (Leaflet)**: Operates out-of-the-box with **zero billing accounts, API keys, or configurations required**.
+- **Parchment Styling Filters**: Tiles are customized with an inline sepia and contrast filter to blend CartoDB tiles seamlessly with our light-ivory archive palette (`#FAF9F6`).
+- **Interactive Directory**: A responsive split layout where selecting locations on the sidebar pans the map viewport and reveals custom historical Popups.
+- **Dashed Migration Trails**: Layered visual pathways tracking:
+  - **Oghuz Westward Migrations** (China -> Khorasan -> Caucasus -> Anatolia -> Syria)
+  - **Subcontinent Bhayat Settlements** (Khorasan -> Sindh -> Gujarat)
+  - **Qezelbash Relocations** (Caucasus -> Khorasan -> Afghanistan)
+- **Historical Milestones Timeline**: Traces key markers from 950 AD to the 20th century. Clicking any timeline entry automatically flies the map coordinates to that historic location.
+- **Tribal Branches Grid**: An catalog detailed historical significance of the **Ak-Bayat**, **Kara-Bayat**, **Šām Bayātī**, and **Bhayat** branches.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 15 (App Router, React 19, TypeScript)
+- **Styling**: Tailwind CSS v4 (CSS-first config)
+- **Mapping Library**: `leaflet`, `react-leaflet`, and `@types/leaflet`
+- **Icons**: `lucide-react`
+- **Animations**: `framer-motion`
+
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+Make sure you have [Node.js](https://nodejs.org) (v18.x or later) installed on your system. 
+
+Install project dependencies:
+
+```bash
+npm install
+```
+
+### 2. Running the Development Server
+
+Start the Next.js development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your web browser to explore the archive. No API keys or environmental setup are required!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Compile the optimized bundle:
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/page.tsx`: Main dashboard entry point, dynamically loading the Leaflet component with `ssr: false` to ensure server-rendering stability.
+- `src/app/layout.tsx`: Configures Google Fonts (Playfair Display & Inter) and SEO metadata.
+- `src/app/globals.css`: Tailwind v4 base configurations, Leaflet core styling imports, and custom map popup parchment styles.
+- `src/app/types.ts`: TypeScript typings for locations, timeline, and branches.
+- `src/app/data/locations.ts`: Contains the database coordinates and narrative summaries.
+- `src/app/components/MigrationMap.tsx`: Interactive Leaflet map container rendering custom SVG divIcons, tiles, markers, and paths.

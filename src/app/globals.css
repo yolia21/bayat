@@ -1,26 +1,145 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ivory: #FAF9F6;
+  --color-ivory-dark: #F3F0E6;
+  --color-crimson: #991B1B;
+  --color-crimson-dark: #7F1D1D;
+  --color-crimson-light: #FCA5A5;
+  --color-gold: #D97706;
+  --color-gold-dark: #B45309;
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  --color-ivory: var(--color-ivory);
+  --color-ivory-dark: var(--color-ivory-dark);
+  --color-crimson: var(--color-crimson);
+  --color-crimson-dark: var(--color-crimson-dark);
+  --color-crimson-light: var(--color-crimson-light);
+  --color-gold: var(--color-gold);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-slate-900: var(--color-slate-900);
+  --color-slate-800: var(--color-slate-800);
+  --color-slate-700: var(--color-slate-700);
+  --color-slate-600: var(--color-slate-600);
+  --color-slate-500: var(--color-slate-500);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-ivory);
+  color: var(--color-slate-800);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Premium vintage/parchment styling utilities */
+.parchment-border {
+  border: 1px solid rgba(153, 27, 27, 0.15);
+  box-shadow: inset 0 0 40px rgba(153, 27, 27, 0.03), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.vintage-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-crimson) 20%, var(--color-gold) 50%, var(--color-crimson) 80%, transparent);
+}
+
+/* Custom scrollbar for a premium look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(153, 27, 27, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(153, 27, 27, 0.5);
+}
+
+/* ----------------- LEAFLET THEME OVERRIDES ----------------- */
+.leaflet-container {
+  font-family: var(--font-sans) !important;
+  background-color: var(--color-ivory-dark) !important;
+}
+
+/* Custom sepia/warm tile layer overlay filter for historic look */
+.leaflet-tile-pane {
+  filter: sepia(25%) saturate(85%) contrast(100%) hue-rotate(345deg);
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: var(--color-ivory) !important;
+  color: var(--color-slate-800) !important;
+  border: 1px solid rgba(153, 27, 27, 0.15) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.75rem !important;
+  font-family: var(--font-sans) !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px !important;
+  line-height: 1.6 !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--color-ivory) !important;
+  border-left: 1px solid rgba(153, 27, 27, 0.12) !important;
+  border-bottom: 1px solid rgba(153, 27, 27, 0.12) !important;
+  box-shadow: none !important;
+}
+
+.leaflet-popup-close-button {
+  color: var(--color-slate-400) !important;
+  padding: 6px 8px 0 0 !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: var(--color-crimson) !important;
+  background: transparent !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid rgba(153, 27, 27, 0.15) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 0.375rem !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: var(--color-ivory) !important;
+  color: var(--color-slate-700) !important;
+  border-bottom: 1px solid rgba(153, 27, 27, 0.1) !important;
+  font-family: monospace;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background-color: var(--color-ivory-dark) !important;
+  color: var(--color-crimson) !important;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(250, 249, 246, 0.85) !important;
+  font-size: 8px !important;
+  color: var(--color-slate-500) !important;
+  border-top-left-radius: 4px;
 }
