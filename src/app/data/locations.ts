@@ -75,15 +75,15 @@ export const locations: LocationMarker[] = [
   },
   {
     id: "sindh",
-    title: "Sindh",
-    subtitle: "Karachi & Coastal Ports",
+    title: "Sindh & Delhi Sultanate",
+    subtitle: "Entry to the Subcontinent (Refuge from Mongols)",
     lat: 24.8607,
     lng: 67.0011,
-    historicalPeriod: "17th - 20th Century",
-    description: "As Oghuz clans migrated southward into the Indian subcontinent, the Bhayat branch emerged. They established presence in coastal Sindh, particularly Karachi, transitioning from pastoralists into merchants, traders, and community leaders in the Arabian Sea trading networks.",
-    significance: "First subcontinent entry point. Evolved the surname 'Bhayat', contributing significantly to the maritime trade and the Sunni Vohra communities.",
-    branches: ["Bhayat"],
-    empires: ["Mughal Empire", "Talpur Dynasty", "British Raj"]
+    historicalPeriod: "1225 AD",
+    description: "Driven by Mongol expansion, the Bayat clan defended Nishapur in the 12th century, killing Genghis Khan's son-in-law, Toghuchar. Angered, the Khan destroyed the city, forcing the Bayat to flee. In 1225, this branch reached India to seek refuge and join the Delhi Sultanate under the rule of Sultan Shams ud-din Iltutmish.",
+    significance: "First subcontinent entry point. Seeking refuge from the Mongol onslaught, they offered military service to the Delhi Sultanate before migrating south.",
+    branches: ["Bayat"],
+    empires: ["Delhi Sultanate"]
   },
   {
     id: "gujarat",
@@ -91,11 +91,11 @@ export const locations: LocationMarker[] = [
     subtitle: "Surat & Rander Trading Hubs",
     lat: 21.1702,
     lng: 72.8311,
-    historicalPeriod: "18th - 20th Century",
-    description: "Settling in the prosperous trading ports of Gujarat, especially Surat and the medieval port town of Rander, the Bhayat clan became deeply rooted within the Sunni Vohra and Bohra merchant classes. They engaged in international trade with East Africa, the Hijaz, and Southeast Asia.",
-    significance: "Established major merchant families. Key pillars of the Surat and Rander Sunni Vohra communities, known for philanthropy and trade.",
+    historicalPeriod: "14th Century - Present",
+    description: "Following Alauddin Khilji's conquest of Gujarat in the 14th century, the Bayats migrated south, settling in the major trading hubs of Surat and Rander. Over generations of integration with the Sunni Vohra and Bohra merchant classes, the Turkic tribal name 'Bayat' gradually localized into 'Bhayat'.",
+    significance: "Primary settlement of the Bhayat branch. Shifted from frontier warriors to commercial leaders, establishing deep mercantile roots in Rander and Surat.",
     branches: ["Bhayat"],
-    empires: ["Mughal Empire", "Surat Nawabship", "British Raj"]
+    empires: ["Delhi Sultanate", "Mughal Empire"]
   }
 ];
 
@@ -162,22 +162,22 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     id: "t7",
-    year: "c. 1790 AD",
-    title: "Southward Migration to Sindh Ports",
-    subtitle: "Transformation into Merchants",
-    description: "Migrating from Iran and Balochistan, the Bhayat branch establishes itself in Karachi. They adapt to coastal trading, joining the Sunni Vohra communities.",
-    branch: "Bhayat",
-    empire: "Talpur Dynasty",
+    year: "1225 AD",
+    title: "Subcontinent Entry & Delhi Sultanate",
+    subtitle: "Refuge from Mongol Destruction",
+    description: "Following their resistance in Nishapur—where they killed Genghis Khan's son-in-law Toghuchar, prompting a brutal Mongol sack—the Bayats flee to India. They join the Delhi Sultanate under Sultan Iltutmish's rule.",
+    branch: "Bayat",
+    empire: "Delhi Sultanate",
     locationId: "sindh"
   },
   {
     id: "t8",
-    year: "c. 1820 AD",
-    title: "Gujarat Merchant Elite in Surat & Rander",
-    subtitle: "Maritime Trade Network",
-    description: "The Bhayat clan establishes deep commercial roots in Surat and Rander, trading textiles and spices globally, becoming pillars of the local Islamic merchant class.",
+    year: "14th Century",
+    title: "Southward Migration & Bhayat Localization",
+    subtitle: "Settling in Gujarat Ports",
+    description: "Following Alauddin Khilji's conquests, the Bayat migrate south to Gujarat (Surat and Rander), where their Turkic tribal name gradually morphs into the localized surname 'Bhayat' among merchant communities.",
     branch: "Bhayat",
-    empire: "British Raj",
+    empire: "Delhi Sultanate / Gujarat Sultanate",
     locationId: "gujarat"
   }
 ];
@@ -211,8 +211,8 @@ export const branchesInfo: ClanBranch[] = [
     id: "bhayat",
     name: "Bhayat Branch",
     translation: "Subcontinental Adaptation",
-    regions: ["Sindh (Pakistan)", "Gujarat (India)", "Surat & Rander"],
-    history: "Representing the southward maritime migration, the surname evolved into 'Bhayat' as they entered the Indian subcontinent. Settling in Sindh and Gujarat, they shifted from military roles to establish trading firms, becoming integral parts of the Sunni Vohra and Bohra communities.",
-    significance: "Spearheaded mercantile connections between India, East Africa, and the Persian Gulf; renowned for educational and social philanthropy."
+    regions: ["Delhi / Sindh", "Gujarat (Surat & Rander)"],
+    history: "The lineage's migration to India was driven by Mongol expansion. The Bayats in Nishapur declared war on the Mongols, killing Genghis Khan's son-in-law Toghuchar in 1221. Following the city's destruction, they fled, reaching the subcontinent in 1225 to seek refuge and join the Delhi Sultanate under Sultan Iltutmish.",
+    significance: "Following Alauddin Khilji's 14th-century conquest, they migrated south to Gujarat, where the Turkic name 'Bayat' gradually localized into 'Bhayat' within Sunni Vohra and Bohra merchant classes."
   }
 ];
