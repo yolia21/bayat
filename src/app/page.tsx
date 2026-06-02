@@ -72,42 +72,103 @@ export default function Home() {
       {/* ----------------- HERO SECTION ----------------- */}
       <section className="relative overflow-hidden bg-gradient-to-b from-amber-50/20 via-ivory to-ivory border-b border-crimson/5 pt-12 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 text-[11px] font-bold text-crimson bg-crimson/5 border border-crimson/10 rounded-full uppercase tracking-wider mb-6">
-              <History className="w-3.5 h-3.5" />
-              Oghuz Turkic Heritage
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-              The Journey of the Bayat Clan
-            </h2>
-            <div className="vintage-divider w-32 mx-auto mb-6" />
-            <p className="text-base text-slate-650 leading-relaxed font-sans font-light mb-8">
-              The <strong>Bayat</strong> (also known as <strong>Bhayat</strong>) tribe stands as one of the original 
-              twenty-two Oghuz Turkic clans, first documented in the 10th century by Mahmud al-Kashgari. Translated historically 
-              as <em>&ldquo;wealthy&rdquo;</em> or <em>&ldquo;rich in horses,&rdquo;</em> the clan embarked on a centuries-long westward migration 
-              that shaped the demographics and military power of medieval empires, leaving an enduring legacy from the steppes of 
-              Northern China to the ports of the Indian Subcontinent.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-in fade-in slide-in-from-top-4 duration-500">
             
-            {/* Quick Stats Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-              <div className="p-4 bg-ivory-dark/45 border border-crimson/5 rounded-xl shadow-sm">
-                <div className="text-crimson font-serif text-lg font-bold">Oghuz Turkic</div>
-                <div className="text-[10px] uppercase font-semibold text-slate-500 tracking-wider mt-1">Origins</div>
-              </div>
-              <div className="p-4 bg-ivory-dark/45 border border-crimson/5 rounded-xl shadow-sm">
-                <div className="text-crimson font-serif text-lg font-bold">&ldquo;Wealthy&rdquo;</div>
-                <div className="text-[10px] uppercase font-semibold text-slate-500 tracking-wider mt-1">Etymological Meaning</div>
-              </div>
-              <div className="p-4 bg-ivory-dark/45 border border-crimson/5 rounded-xl shadow-sm">
-                <div className="text-crimson font-serif text-lg font-bold">3 Continents</div>
-                <div className="text-[10px] uppercase font-semibold text-slate-500 tracking-wider mt-1">Migration Reach</div>
-              </div>
-              <div className="p-4 bg-ivory-dark/45 border border-crimson/5 rounded-xl shadow-sm">
-                <div className="text-crimson font-serif text-lg font-bold">4 Major Dynasties</div>
-                <div className="text-[10px] uppercase font-semibold text-slate-500 tracking-wider mt-1">Safavids to Ottomans</div>
+            {/* Emblem Frame Column */}
+            <div className="lg:col-span-4 flex flex-col items-center">
+              <div className="bg-ivory-dark border border-crimson/15 p-6 rounded-xl shadow-md w-full max-w-[280px] lg:max-w-full text-center relative group">
+                <span className="absolute top-2 left-2.5 text-[8px] uppercase font-bold text-slate-400 font-mono tracking-widest">Tamgha Mark</span>
+                <span className="absolute top-2 right-2.5 text-[8px] uppercase font-bold text-slate-400 font-mono tracking-widest">Gün Han</span>
+                
+                <div className="w-full aspect-[4/3] bg-ivory border border-slate-200/60 rounded-lg p-5 flex items-center justify-center mb-4 mt-2 transition-all duration-300 group-hover:border-crimson/25 group-hover:shadow-inner">
+                  <img 
+                    src="/bayat.svg.png" 
+                    alt="Bayat Clan Runic Emblem" 
+                    className="max-h-full max-w-full object-contain filter drop-shadow-sm select-none"
+                  />
+                </div>
+                
+                <h3 className="text-sm font-serif font-black uppercase text-slate-900 tracking-wider mb-1">
+                  Bayat Clan Emblem
+                </h3>
+                <p className="text-[10px] text-slate-500 italic font-sans leading-relaxed">
+                  Runic tribal seal (tamgha) representing "wealthy" and "abundant in horses." Used for centuries to brand cattle, stamp weapons, and seal treaties.
+                </p>
               </div>
             </div>
+            
+            {/* Bio and History Column */}
+            <div className="lg:col-span-8 flex flex-col justify-center">
+              <div className="text-left">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 text-[11px] font-bold text-crimson bg-crimson/5 border border-crimson/10 rounded-full uppercase tracking-wider mb-4">
+                  <History className="w-3.5 h-3.5" />
+                  Oghuz Turkic Noble Lineage
+                </span>
+                <h2 className="text-3xl md:text-4xl font-serif font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+                  The Chronicle of the Bayat Tribe
+                </h2>
+                <div className="vintage-divider w-24 mb-6" />
+                
+                <div className="space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-sans font-light">
+                  <p>
+                    The <strong>Bayat</strong> (also spelled <em>Bhayat</em> or <em>Bavayet</em>) represent one of the 
+                    most prestigious and senior clans of the <strong>Oghuz Turks</strong>. In the ancient genealogy of Oghuz Khan—the 
+                    legendary ancestor of all Turkic nations—the Bayat are classified under the <strong>Bozok</strong> division, descending 
+                    directly from <strong>Gün Han</strong> (the Lord of Sun), the eldest of Oghuz Khan&apos;s sons. Historically, they held 
+                    an esteemed leadership status within the Turkic confederations, a prestige reflected in the ancient Turkmen proverb: 
+                    <em>&ldquo;Il başy - gaýy-baýat&rdquo;</em> (&ldquo;The Kayı and Bayat tribes shall lead the people&rdquo;).
+                  </p>
+                  <p>
+                    The etymology of the name <strong>Bayat</strong> comes from the Old Turkic root meaning 
+                    <strong>&ldquo;wealthy,&rdquo; &ldquo;abundant,&rdquo;</strong> or <strong>&ldquo;rich in horses.&rdquo;</strong> First documented in the 
+                    10th century by the medieval grammarian Mahmud al-Kashgari in his monumental work <em>Dīwān Lughāt al-Turk</em>, 
+                    the clan originally inhabited the steppes of Northern China and the borders of Mongolia, centered near the Qaramouran 
+                    (Yellow) River. From this East Asian cradle, the clan became swept up in the massive westward migrations that transformed 
+                    Central Asia and the Middle East, spreading their culture and military elite across modern Turkmenistan, Iran, Azerbaijan, 
+                    Iraq, Syria, Turkey, and Afghanistan.
+                  </p>
+                  <p>
+                    Renowned as formidable horse breeders and cavalry commanders, the Bayats served as the military aristocracy 
+                    for major historical powers. They were instrumental in the conquests of the <strong>Seljuk Empire</strong>, formed the core of 
+                    the <strong>Aq Qoyunlu (White Sheep)</strong> confederacy, and served in the elite <strong>Qezelbash</strong> coalitions under the 
+                    <strong>Safavid Empire</strong>. Over the centuries, their name left a permanent mark on Islamic literature and art: Dede Korkut, the legendary 
+                    shamanic storyteller of Oghuz epics, and Muhammad Fuzûlî, the incomparable 16th-century classical poet of the Azerbaijani dialect, 
+                    both proudly belonged to the Bayat lineage.
+                  </p>
+                  <p>
+                    Perhaps the most dramatic chapter in the clan&apos;s history belongs to the branch that migrated to the Indian subcontinent. 
+                    In the early 13th century, as the Mongol hordes advanced under Genghis Khan, the Bayats of Neyshabur (Nishapur) declared war 
+                    against the invaders. In 1221, their defenders shot and killed Genghis Khan&apos;s son-in-law, Toghuchar, from the city walls. 
+                    In retribution, the Khan ordered the complete destruction of Nishapur, forcing the surviving Bayats to flee. A major branch 
+                    journeyed south into India, joining the <strong>Delhi Sultanate</strong> in 1225 under Sultan Shams ud-din Iltutmish to seek refuge. 
+                    Following Alauddin Khilji&apos;s conquest of Gujarat in the 14th century, they migrated further south to the trading ports of 
+                    Surat and Rander, where their name gradually localized and phonetically softened into the contemporary surname 
+                    <strong>&ldquo;Bhayat&rdquo;</strong>, shifting their ancestral legacy from warriors to merchants.
+                  </p>
+                </div>
+
+                {/* Quick Stats Grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                  <div className="p-3 bg-ivory-dark/45 border border-crimson/5 rounded-lg shadow-sm">
+                    <div className="text-crimson font-serif text-base font-bold">Bozok Division</div>
+                    <div className="text-[9px] uppercase font-semibold text-slate-500 tracking-wider mt-0.5">Oghuz Lineage</div>
+                  </div>
+                  <div className="p-3 bg-ivory-dark/45 border border-crimson/5 rounded-lg shadow-sm">
+                    <div className="text-crimson font-serif text-base font-bold">&ldquo;Wealthy&rdquo;</div>
+                    <div className="text-[9px] uppercase font-semibold text-slate-500 tracking-wider mt-0.5">Etymological Meaning</div>
+                  </div>
+                  <div className="p-3 bg-ivory-dark/45 border border-crimson/5 rounded-lg shadow-sm">
+                    <div className="text-crimson font-serif text-base font-bold">1225 AD</div>
+                    <div className="text-[9px] uppercase font-semibold text-slate-500 tracking-wider mt-0.5">Subcontinent Entry</div>
+                  </div>
+                  <div className="p-3 bg-ivory-dark/45 border border-crimson/5 rounded-lg shadow-sm">
+                    <div className="text-crimson font-serif text-base font-bold">Fuzûlî & Korkut</div>
+                    <div className="text-[9px] uppercase font-semibold text-slate-500 tracking-wider mt-0.5">Cultural Icons</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
