@@ -31,3 +31,15 @@ export interface ClanBranch {
   history: string;
   significance: string;
 }
+
+export interface FamousFigure {
+  id: string;
+  name: string;
+  century: string;
+  role: string;
+  locationId: string;
+  branch: string;
+  quote: string;
+  bio: string;
+  legacy: string;
+}

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-import { locations, timelineEvents, branchesInfo } from "./data/locations";
+import { locations, timelineEvents, branchesInfo, famousFigures } from "./data/locations";
 
 const MigrationMap = dynamic(() => import("./components/MigrationMap"), {
   ssr: false,
@@ -31,6 +31,7 @@ import {
 
 export default function Home() {
   const [selectedLocationId, setSelectedLocationId] = useState<string | null>(null);
+  const [activeFigureId, setActiveFigureId] = useState<string>("korkut");
 
   const handleSelectLocation = (id: string | null) => {
     setSelectedLocationId(id);
@@ -252,6 +253,127 @@ export default function Home() {
                 onSelectLocation={handleSelectLocation}
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ----------------- FAMOUS FIGURES SECTION ----------------- */}
+      <section className="py-16 bg-ivory border-b border-crimson/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 text-[10px] font-bold text-crimson bg-crimson/5 border border-crimson/15 rounded-full uppercase tracking-wider mb-4">
+              <BookOpen className="w-3.5 h-3.5" />
+              Lineage Icons
+            </span>
+            <h3 className="text-3xl font-serif font-extrabold text-slate-900">
+              Famous Figures of the Lineage
+            </h3>
+            <div className="vintage-divider w-24 mx-auto mt-4 mb-4" />
+            <p className="text-xs text-slate-600">
+              Discover the storytellers, poets, mystics, and rulers who proudly carried the legacy of the Bayat clan.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Left: Interactive list of figures */}
+            <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+              {famousFigures.map((fig) => {
+                const isActive = activeFigureId === fig.id;
+                return (
+                  <button
+                    key={fig.id}
+                    onClick={() => {
+                      setActiveFigureId(fig.id);
+                      if (fig.locationId) {
+                        handleSelectLocation(fig.locationId);
+                      }
+                    }}
+                    className={`p-4 rounded-xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between h-[130px] focus:outline-none ${
+                      isActive 
+                        ? "bg-ivory border-crimson shadow-md ring-1 ring-crimson/25 scale-[1.03]" 
+                        : "bg-ivory-dark/40 border-slate-200 hover:bg-ivory hover:border-slate-355 hover:shadow-sm"
+                    }`}
+                  >
+                    <div>
+                      <span className="text-[8px] font-bold uppercase text-gold tracking-wider">
+                        {fig.century}
+                      </span>
+                      <h4 className="text-sm font-serif font-black text-slate-900 mt-1 leading-tight">
+                        {fig.name}
+                      </h4>
+                    </div>
+                    <div className="mt-auto border-t border-slate-200/50 pt-2 w-full">
+                      <p className="text-[10px] font-medium text-slate-500 line-clamp-1">
+                        {fig.role}
+                      </p>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Right: Detailed Biography parchment panel */}
+            <div className="lg:col-span-7 bg-ivory parchment-border p-6 rounded-xl relative overflow-hidden transition-all duration-500 shadow-md">
+              {/* Decorative corner accents */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-crimson/25 rounded-tl-lg" />
+              <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-crimson/25 rounded-tr-lg" />
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-crimson/25 rounded-bl-lg" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-crimson/25 rounded-br-lg" />
+
+              {(() => {
+                const fig = famousFigures.find(f => f.id === activeFigureId);
+                if (!fig) return null;
+                return (
+                  <div className="animate-in fade-in duration-300 space-y-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                      <div>
+                        <h4 className="text-xl font-serif font-black text-slate-900 leading-tight">
+                          {fig.name}
+                        </h4>
+                        <p className="text-xs text-slate-500 font-sans italic mt-0.5">
+                          {fig.role} &bull; {fig.century}
+                        </p>
+                      </div>
+                      <span className="self-start sm:self-auto text-[9px] bg-crimson/5 text-crimson px-2.5 py-0.5 rounded-full border border-crimson/10 font-sans font-bold uppercase tracking-wider">
+                        {fig.branch}
+                      </span>
+                    </div>
+
+                    {/* Historical Quote Block */}
+                    <div className="bg-ivory-dark/45 border-l-2 border-gold py-2 px-3 italic text-xs text-slate-600 leading-relaxed font-serif relative">
+                      &ldquo;{fig.quote}&rdquo;
+                    </div>
+
+                    <div className="space-y-3">
+                      <h5 className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                        Biography & Historical Impact
+                      </h5>
+                      <p className="text-xs text-slate-700 leading-relaxed font-sans font-light">
+                        {fig.bio}
+                      </p>
+                    </div>
+
+                    <div className="border-t border-slate-100 pt-3 flex flex-col sm:flex-row justify-between gap-3 text-xs">
+                      <div>
+                        <span className="font-bold text-slate-500 block uppercase text-[9px] tracking-wider mb-0.5">Lineage Legacy</span>
+                        <span className="text-slate-800 font-medium">{fig.legacy}</span>
+                      </div>
+                      {fig.locationId && (
+                        <button
+                          onClick={() => handleSelectLocation(fig.locationId)}
+                          className="self-start sm:self-auto flex items-center gap-1 text-crimson font-bold hover:underline cursor-pointer transition-all duration-200 mt-2 sm:mt-0 whitespace-nowrap"
+                        >
+                          <MapPin className="w-3.5 h-3.5" />
+                          Center Map
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                );
+              })()}
+            </div>
+
           </div>
         </div>
       </section>

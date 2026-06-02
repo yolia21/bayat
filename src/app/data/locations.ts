@@ -1,4 +1,4 @@
-import { LocationMarker, TimelineEvent, ClanBranch } from "../types";
+import { LocationMarker, TimelineEvent, ClanBranch, FamousFigure } from "../types";
 
 export const locations: LocationMarker[] = [
   {
@@ -258,5 +258,52 @@ export const branchesInfo: ClanBranch[] = [
     regions: ["Delhi / Sindh", "Gujarat (Surat & Rander)"],
     history: "The lineage's migration to India was driven by Mongol expansion. The Bayats in Nishapur declared war on the Mongols, killing Genghis Khan's son-in-law Toghuchar in 1221. Following the city's destruction, they fled, reaching the subcontinent in 1225 to seek refuge and join the Delhi Sultanate under Sultan Iltutmish.",
     significance: "Following Alauddin Khilji's 14th-century conquest, they migrated south to Gujarat, where the Turkic name 'Bayat' gradually localized into 'Bhayat' within Sunni Vohra and Bohra merchant classes."
+  }
+];
+
+export const famousFigures: FamousFigure[] = [
+  {
+    id: "korkut",
+    name: "Dede Korkut",
+    century: "c. 10th Century",
+    role: "Legendary Sage, Storyteller & Bard",
+    locationId: "turkmenistan",
+    branch: "Bozok Bayat",
+    quote: "Unless one calls on God, no work prospereth. Unless the Almighty granteth, no man groweth rich.",
+    bio: "Dede Korkut (Grandfather Korkut) is the legendary sage, storyteller, and spiritual advisor of the Oghuz Turks, traditionally attributed to the Bayat tribe. He is the central figure and narrator of the Book of Dede Korkut, the foundational epic of Turkic literature containing stories of Oghuz valor, ethics, and tribal wars. As a shamanic bard, he is credited with the invention of the Qobuz (Turkic lute) and was historically consulted by Oghuz Khans for his foresight and wisdom.",
+    legacy: "Revered as the patron sage of Turkmen, Turkish, and Azerbaijani folk literature; his tales are inscribed on UNESCO's Intangible Cultural Heritage list."
+  },
+  {
+    id: "fuzuli",
+    name: "Muhammad Fuzûlî",
+    century: "1494 – 1556 AD",
+    role: "Poet, Philosopher & Classical Scholar",
+    locationId: "iraq",
+    branch: "Iraqi Bayat",
+    quote: "If the heart were not a mirror for the light of divine beauty, then love's sorrow would never find a home inside it.",
+    bio: "Muhammad bin Suleyman, universally known by his pen name Fuzûlî, was a 16th-century classical poet and philosopher who belonged to the Iraqi Bayat branch in Kirkuk. Writing masterfully in Azerbaijani Turkic, Persian, and Arabic, he is regarded as one of the greatest poets of the Divan tradition. His masterpiece, 'Leyla and Mecnun', is a profound allegorical exploration of spiritual love and sorrow, blending Sufi mysticism with classical Islamic romantic narrative.",
+    legacy: "Considered the national poet of Azerbaijan and a major pillar of Turkish and Persian classical literature. His works deeply shaped the Azerbaijani literary language."
+  },
+  {
+    id: "ruseni",
+    name: "Dede Ömer Rûşenî",
+    century: "c. 1410 – 1487 AD",
+    role: "Sufi Mystic, Poet & Spiritual Guide",
+    locationId: "anatolia",
+    branch: "Anatolian Bayat",
+    quote: "Turn your face to the light of the soul, and let the dust of the world be washed away by the tears of devotion.",
+    bio: "Dede Ömer Rûşenî was a famous 15th-century Sufi mystic and classical poet born in Anatolia who belonged to the Bayat clan. He traveled to Azerbaijan, where he became one of the primary figures and renovators of the Khalwati Sufi order. He authored multiple masnavis (allegorical spiritual poems) such as 'Miskinname' (Book of the Humble) that explored themes of spiritual detachment, divine alignment, and inner purification.",
+    legacy: "A major figure of early Turkish Sufism and Azerbaijani mysticism whose disciples spread the Khalwati order extensively across Turkey, Egypt, and the Balkans."
+  },
+  {
+    id: "gazanfer",
+    name: "Gazanfer Khan",
+    century: "17th Century",
+    role: "Emir of Nishapur & Safavid Commander",
+    locationId: "khorasan",
+    branch: "Kara-Bayat",
+    quote: "A fortress is not defended by stone walls, but by the loyalty and iron will of the warriors standing upon them.",
+    bio: "Gazanfer Khan was the sovereign Emir of the autonomous Kara-Bayat Principality of Nishapur in Khorasan during the Safavid Empire. Representing the military vanguard of the Black Bayats, he defended the frontiers of Khorasan against Uzbek and Turkmen nomadic invasions. Under his leadership, the Kara-Bayats consolidated their military standing, producing regional governors and elite cavalry commanders who secured the empire's borders.",
+    legacy: "Established the political autonomy of the Kara-Bayat house in Khorasan, which maintained regional influence and military prestige well into the Afsharid era."
   }
 ];
