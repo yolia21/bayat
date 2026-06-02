@@ -294,16 +294,5 @@ export const famousFigures: FamousFigure[] = [
     quote: "Turn your face to the light of the soul, and let the dust of the world be washed away by the tears of devotion.",
     bio: "Dede Ömer Rûşenî was a famous 15th-century Sufi mystic and classical poet born in Anatolia who belonged to the Bayat clan. He traveled to Azerbaijan, where he became one of the primary figures and renovators of the Khalwati Sufi order. He authored multiple masnavis (allegorical spiritual poems) such as 'Miskinname' (Book of the Humble) that explored themes of spiritual detachment, divine alignment, and inner purification.",
     legacy: "A major figure of early Turkish Sufism and Azerbaijani mysticism whose disciples spread the Khalwati order extensively across Turkey, Egypt, and the Balkans."
-  },
-  {
-    id: "gazanfer",
-    name: "Gazanfer Khan",
-    century: "17th Century",
-    role: "Emir of Nishapur & Safavid Commander",
-    locationId: "khorasan",
-    branch: "Kara-Bayat",
-    quote: "A fortress is not defended by stone walls, but by the loyalty and iron will of the warriors standing upon them.",
-    bio: "Gazanfer Khan was the sovereign Emir of the autonomous Kara-Bayat Principality of Nishapur in Khorasan during the Safavid Empire. Representing the military vanguard of the Black Bayats, he defended the frontiers of Khorasan against Uzbek and Turkmen nomadic invasions. Under his leadership, the Kara-Bayats consolidated their military standing, producing regional governors and elite cavalry commanders who secured the empire's borders.",
-    legacy: "Established the political autonomy of the Kara-Bayat house in Khorasan, which maintained regional influence and military prestige well into the Afsharid era."
   }
 ];
