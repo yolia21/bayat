@@ -285,14 +285,14 @@ export const famousFigures: FamousFigure[] = [
     legacy: "Considered the national poet of Azerbaijan and a major pillar of Turkish and Persian classical literature. His works deeply shaped the Azerbaijani literary language."
   },
   {
-    id: "ruseni",
-    name: "Dede Ömer Rûşenî",
-    century: "c. 1410 – 1487 AD",
-    role: "Sufi Mystic, Poet & Spiritual Guide",
+    id: "bayati_hasan",
+    name: "Hasan bin Mahmûd-ı Bayatî",
+    century: "15th Century",
+    role: "Ottoman Historian & Scholar",
     locationId: "anatolia",
     branch: "Anatolian Bayat",
-    quote: "Turn your face to the light of the soul, and let the dust of the world be washed away by the tears of devotion.",
-    bio: "Dede Ömer Rûşenî was a famous 15th-century Sufi mystic and classical poet born in Anatolia who belonged to the Bayat clan. He traveled to Azerbaijan, where he became one of the primary figures and renovators of the Khalwati Sufi order. He authored multiple masnavis (allegorical spiritual poems) such as 'Miskinname' (Book of the Humble) that explored themes of spiritual detachment, divine alignment, and inner purification.",
-    legacy: "A major figure of early Turkish Sufism and Azerbaijani mysticism whose disciples spread the Khalwati order extensively across Turkey, Egypt, and the Balkans."
+    quote: "The lineage of the Oghuz is a tree whose roots run deep into the soil of honor, and whose branches shade the history of kings.",
+    bio: "Hasan bin Mahmûd-ı Bayatî was a 15th-century Ottoman historian, scholar, and member of the Bayat tribe. Before his fame as a chronicler, he was a dervish under the mystic Dede Ömer Rûşenî in Tabriz. In 1481, during a pilgrimage to the Hejaz, he encountered the Ottoman Prince Cem Sultan. The prince commissioned him to write a genealogical history of the Oghuz and the Ottoman dynasty, which Hasan completed in a single week.",
+    legacy: "Author of 'Câm-ı Cem-Âyîn' (The Cup of Jamshid), one of the earliest and most vital chronicles connecting the Ottoman lineage to the legendary Oghuz Khan, drawing from a now-lost ancient 'Oğuz-nâme'."
   }
 ];
