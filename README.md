@@ -1,6 +1,6 @@
-# The Bayat Chronicle
+# The Bayat Archives
 
-**The Bayat Chronicle** is a premium, interactive historical tracking website and digital archive dedicated to tracing the migrations, branches, and imperial footprint of the historical Oghuz Turkic **Bayat (and Bhayat)** clan.
+**The Bayat Archives** is a premium, interactive historical tracking website and digital archive curated by Yusuf Olia, dedicated to tracing the migrations, branches, and imperial footprint of the historical Oghuz Turkic **Bayat (and Bhayat)** clan.
 
 Designed with a clean, modern archival theme, the platform blends elegant Serif typography (Playfair Display) and warm ivory backgrounds with interactive GIS mapping to visualize a millennium of history.
 

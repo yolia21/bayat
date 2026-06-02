@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Bayat Chronicle | Historical Archive of the Bayat Tribe",
+  title: "The Bayat Archives | Historical Archive of the Bayat Tribe",
   description: "An interactive geographical and historical archive tracing the migrations, branches, and legacy of the Oghuz Turkic Bayat and Bhayat clans across continents.",
 };
 

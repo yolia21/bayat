@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-xl font-serif font-black tracking-wider text-slate-900 uppercase">
-                The Bayat Chronicle
+                The Bayat Archives
               </h1>
               <p className="text-[10px] text-slate-500 font-sans tracking-widest uppercase">
                 Geographical & Historical Archive of the Oghuz Clan
@@ -584,7 +584,7 @@ export default function Home() {
               <Compass className="w-6 h-6 text-gold animate-[spin_60s_linear_infinite]" />
               <div>
                 <h4 className="text-base font-serif font-bold uppercase tracking-wider text-ivory">
-                  The Bayat Chronicle
+                  The Bayat Archives
                 </h4>
                 <p className="text-[9px] uppercase tracking-widest text-slate-500">
                   Tracing a millennium of Turkic migration & legacy
@@ -601,7 +601,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-sans">
             <p>
-              &copy; {new Date().getFullYear()} The Bayat Chronicle. Built as a dedicated historical research archive.
+              &copy; {new Date().getFullYear()} The Bayat Archives. Curated and built by Yusuf Olia.
             </p>
             <p className="italic">
               Sources: Mahmud al-Kashgari&apos;s Dīwān Lughāt al-Turk (1072), Safavid and Ottoman Imperial Archives.
