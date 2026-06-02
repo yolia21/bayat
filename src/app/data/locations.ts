@@ -121,6 +121,26 @@ export const timelineEvents: TimelineEvent[] = [
     locationId: "khorasan"
   },
   {
+    id: "t7",
+    year: "1225 AD",
+    title: "Subcontinent Entry & Delhi Sultanate",
+    subtitle: "Refuge from Mongol Destruction",
+    description: "Following their resistance in Nishapur—where they killed Genghis Khan's son-in-law Toghuchar, prompting a brutal Mongol sack—the Bayats flee to India. They join the Delhi Sultanate under Sultan Iltutmish's rule.",
+    branch: "Bayat",
+    empire: "Delhi Sultanate",
+    locationId: "sindh"
+  },
+  {
+    id: "t8",
+    year: "14th Century",
+    title: "Southward Migration & Bhayat Localization",
+    subtitle: "Settling in Gujarat Ports",
+    description: "Following Alauddin Khilji's conquests, the Bayat migrate south to Gujarat (Surat and Rander), where their Turkic tribal name gradually morphs into the localized surname 'Bhayat' among merchant communities.",
+    branch: "Bhayat",
+    empire: "Delhi Sultanate / Gujarat Sultanate",
+    locationId: "gujarat"
+  },
+  {
     id: "t3",
     year: "c. 1380 AD",
     title: "Rise of the Syrian Bayat (Šām Bayātī)",
@@ -159,26 +179,6 @@ export const timelineEvents: TimelineEvent[] = [
     branch: "Qezelbash Bayat",
     empire: "Afsharid Empire",
     locationId: "afghanistan"
-  },
-  {
-    id: "t7",
-    year: "1225 AD",
-    title: "Subcontinent Entry & Delhi Sultanate",
-    subtitle: "Refuge from Mongol Destruction",
-    description: "Following their resistance in Nishapur—where they killed Genghis Khan's son-in-law Toghuchar, prompting a brutal Mongol sack—the Bayats flee to India. They join the Delhi Sultanate under Sultan Iltutmish's rule.",
-    branch: "Bayat",
-    empire: "Delhi Sultanate",
-    locationId: "sindh"
-  },
-  {
-    id: "t8",
-    year: "14th Century",
-    title: "Southward Migration & Bhayat Localization",
-    subtitle: "Settling in Gujarat Ports",
-    description: "Following Alauddin Khilji's conquests, the Bayat migrate south to Gujarat (Surat and Rander), where their Turkic tribal name gradually morphs into the localized surname 'Bhayat' among merchant communities.",
-    branch: "Bhayat",
-    empire: "Delhi Sultanate / Gujarat Sultanate",
-    locationId: "gujarat"
   }
 ];
 
