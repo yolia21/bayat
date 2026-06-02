@@ -294,5 +294,38 @@ export const famousFigures: FamousFigure[] = [
     quote: "The lineage of the Oghuz is a tree whose roots run deep into the soil of honor, and whose branches shade the history of kings.",
     bio: "Hasan bin Mahmûd-ı Bayatî was a 15th-century Ottoman historian, scholar, and member of the Bayat tribe. Before his fame as a chronicler, he was a dervish under the mystic Dede Ömer Rûşenî in Tabriz. In 1481, during a pilgrimage to the Hejaz, he encountered the Ottoman Prince Cem Sultan. The prince commissioned him to write a genealogical history of the Oghuz and the Ottoman dynasty, which Hasan completed in a single week.",
     legacy: "Author of 'Câm-ı Cem-Âyîn' (The Cup of Jamshid), one of the earliest and most vital chronicles connecting the Ottoman lineage to the legendary Oghuz Khan, drawing from a now-lost ancient 'Oğuz-nâme'."
+  },
+  {
+    id: "oruj_beg",
+    name: "Oruj Beg Bayat",
+    century: "c. 1560 – 1604 AD",
+    role: "Safavid Ambassador & Writer",
+    locationId: "khorasan",
+    branch: "Kara-Bayat",
+    quote: "The courage of a Bayat is like the standard of the Shah; it stands tallest when the winds of adversity blow hardest.",
+    bio: "Oruj Beg Bayat was a Safavid military officer and diplomat belonging to the Kara-Bayat clan. In 1599, Shah Abbas I appointed him as a secretary to the first Persian embassy sent to Europe to establish an alliance against the Ottoman Empire. He traveled extensively through Europe, eventually converting to Catholicism in Spain where he adopted the name 'Don Juan of Persia'. He wrote a famous memoir in Spanish documenting Safavid Persia's society and administration.",
+    legacy: "Author of 'Don Juan of Persia: A Shi'ah Catholic', providing Europe with one of its first comprehensive eye-witness accounts of Safavid Persian history and administration."
+  },
+  {
+    id: "fath_ali_shah",
+    name: "Fath-Ali Shah Qajar",
+    century: "1772 – 1834 AD",
+    role: "Shah of Qajar Iran",
+    locationId: "khorasan",
+    branch: "Qajar Oghuz",
+    quote: "A kingdom is maintained by the sword, but its memory is preserved by the arts and the chronicle of its dynasties.",
+    bio: "Fath-Ali Shah was the second Qajar king of Iran. The Qajars were an Oghuz Turkic tribe who rose to power following the fall of the Safavids. His reign was marked by significant diplomatic encounters with Europe and the Russo-Persian wars. He was a great patron of the arts, leading to a major revival of Persian court painting and literature.",
+    legacy: "Standardized the Qajar dynasty's administration and oversaw a major cultural renaissance in Iran, leaving behind iconic monuments and court portraitures."
+  },
+  {
+    id: "javad_khan",
+    name: "Javad Khan-e Qajar",
+    century: "1748 – 1804 AD",
+    role: "Khan of the Ganja Khanate",
+    locationId: "caucasus",
+    branch: "Qajar Oghuz / Qezelbash",
+    quote: "Ganja is my homeland, and its keys shall only be surrendered when my dead body is dragged from its battlements.",
+    bio: "Javad Khan-e Qajar was the last sovereign ruler of the Ganja Khanate in Azerbaijan (Caucasus). Belonging to the Qajar branch of the Oghuz Turks, he was a staunch defender against Tsarist Russian expansion. During the Russian Siege of Ganja in 1804, Javad Khan refused to surrender the fortress, replying famously that he would die defending his homeland. He was killed on the city walls during the final assault.",
+    legacy: "Revered as a national hero of Azerbaijan for his valiant resistance against imperial expansion and his defense of Ganja."
   }
 ];
