@@ -340,21 +340,35 @@ export default function Home() {
                       </span>
                     </div>
 
-                    {/* Historical Quote Block */}
-                    <div className="bg-ivory-dark/45 border-l-2 border-gold py-2 px-3 italic text-xs text-slate-600 leading-relaxed font-serif relative">
-                      &ldquo;{fig.quote}&rdquo;
+                    <div className="flex flex-col md:flex-row gap-5 items-start pt-1">
+                      {fig.imageUrl && (
+                        <div className="w-full md:w-[130px] lg:w-[140px] aspect-[3/4] bg-ivory border border-slate-200/80 p-1.5 rounded-lg shadow-sm flex-shrink-0 overflow-hidden flex items-center justify-center relative">
+                          <img 
+                            src={fig.imageUrl} 
+                            alt={fig.name} 
+                            className="w-full h-full object-cover rounded" 
+                          />
+                        </div>
+                      )}
+                      
+                      <div className="flex-1 space-y-3.5">
+                        {/* Historical Quote Block */}
+                        <div className="bg-ivory-dark/45 border-l-2 border-gold py-1.5 px-3 italic text-xs text-slate-650 leading-relaxed font-serif relative">
+                          &ldquo;{fig.quote}&rdquo;
+                        </div>
+
+                        <div className="space-y-2">
+                          <h5 className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                            Biography & Historical Impact
+                          </h5>
+                          <p className="text-xs text-slate-700 leading-relaxed font-sans font-light">
+                            {fig.bio}
+                          </p>
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="space-y-3">
-                      <h5 className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
-                        Biography & Historical Impact
-                      </h5>
-                      <p className="text-xs text-slate-700 leading-relaxed font-sans font-light">
-                        {fig.bio}
-                      </p>
-                    </div>
-
-                    <div className="border-t border-slate-100 pt-3 flex flex-col sm:flex-row justify-between gap-3 text-xs">
+                    <div className="border-t border-slate-100 pt-3.5 flex flex-col sm:flex-row justify-between gap-3 text-xs">
                       <div>
                         <span className="font-bold text-slate-500 block uppercase text-[9px] tracking-wider mb-0.5">Lineage Legacy</span>
                         <span className="text-slate-800 font-medium">{fig.legacy}</span>

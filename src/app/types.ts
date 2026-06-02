@@ -42,4 +42,5 @@ export interface FamousFigure {
   quote: string;
   bio: string;
   legacy: string;
+  imageUrl?: string;
 }

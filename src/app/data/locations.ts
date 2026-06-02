@@ -271,7 +271,8 @@ export const famousFigures: FamousFigure[] = [
     branch: "Bozok Bayat",
     quote: "Unless one calls on God, no work prospereth. Unless the Almighty granteth, no man groweth rich.",
     bio: "Dede Korkut (Grandfather Korkut) is the legendary sage, storyteller, and spiritual advisor of the Oghuz Turks, traditionally attributed to the Bayat tribe. He is the central figure and narrator of the Book of Dede Korkut, the foundational epic of Turkic literature containing stories of Oghuz valor, ethics, and tribal wars. As a shamanic bard, he is credited with the invention of the Qobuz (Turkic lute) and was historically consulted by Oghuz Khans for his foresight and wisdom.",
-    legacy: "Revered as the patron sage of Turkmen, Turkish, and Azerbaijani folk literature; his tales are inscribed on UNESCO's Intangible Cultural Heritage list."
+    legacy: "Revered as the patron sage of Turkmen, Turkish, and Azerbaijani folk literature; his tales are inscribed on UNESCO's Intangible Cultural Heritage list.",
+    imageUrl: "/dedekorkut.jpg"
   },
   {
     id: "fuzuli",
@@ -282,7 +283,8 @@ export const famousFigures: FamousFigure[] = [
     branch: "Iraqi Bayat",
     quote: "If the heart were not a mirror for the light of divine beauty, then love's sorrow would never find a home inside it.",
     bio: "Muhammad bin Suleyman, universally known by his pen name Fuzûlî, was a 16th-century classical poet and philosopher who belonged to the Iraqi Bayat branch in Kirkuk. Writing masterfully in Azerbaijani Turkic, Persian, and Arabic, he is regarded as one of the greatest poets of the Divan tradition. His masterpiece, 'Leyla and Mecnun', is a profound allegorical exploration of spiritual love and sorrow, blending Sufi mysticism with classical Islamic romantic narrative.",
-    legacy: "Considered the national poet of Azerbaijan and a major pillar of Turkish and Persian classical literature. His works deeply shaped the Azerbaijani literary language."
+    legacy: "Considered the national poet of Azerbaijan and a major pillar of Turkish and Persian classical literature. His works deeply shaped the Azerbaijani literary language.",
+    imageUrl: "/fuzuli.jpg"
   },
   {
     id: "bayati_hasan",
@@ -293,7 +295,8 @@ export const famousFigures: FamousFigure[] = [
     branch: "Anatolian Bayat",
     quote: "The lineage of the Oghuz is a tree whose roots run deep into the soil of honor, and whose branches shade the history of kings.",
     bio: "Hasan bin Mahmûd-ı Bayatî was a 15th-century Ottoman historian, scholar, and member of the Bayat tribe. Before his fame as a chronicler, he was a dervish under the mystic Dede Ömer Rûşenî in Tabriz. In 1481, during a pilgrimage to the Hejaz, he encountered the Ottoman Prince Cem Sultan. The prince commissioned him to write a genealogical history of the Oghuz and the Ottoman dynasty, which Hasan completed in a single week.",
-    legacy: "Author of 'Câm-ı Cem-Âyîn' (The Cup of Jamshid), one of the earliest and most vital chronicles connecting the Ottoman lineage to the legendary Oghuz Khan, drawing from a now-lost ancient 'Oğuz-nâme'."
+    legacy: "Author of 'Câm-ı Cem-Âyîn' (The Cup of Jamshid), one of the earliest and most vital chronicles connecting the Ottoman lineage to the legendary Oghuz Khan, drawing from a now-lost ancient 'Oğuz-nâme'.",
+    imageUrl: "/hasanbayati.jpg"
   },
   {
     id: "oruj_beg",
@@ -304,7 +307,8 @@ export const famousFigures: FamousFigure[] = [
     branch: "Kara-Bayat",
     quote: "The courage of a Bayat is like the standard of the Shah; it stands tallest when the winds of adversity blow hardest.",
     bio: "Oruj Beg Bayat was a Safavid military officer and diplomat belonging to the Kara-Bayat clan. In 1599, Shah Abbas I appointed him as a secretary to the first Persian embassy sent to Europe to establish an alliance against the Ottoman Empire. He traveled extensively through Europe, eventually converting to Catholicism in Spain where he adopted the name 'Don Juan of Persia'. He wrote a famous memoir in Spanish documenting Safavid Persia's society and administration.",
-    legacy: "Author of 'Don Juan of Persia: A Shi'ah Catholic', providing Europe with one of its first comprehensive eye-witness accounts of Safavid Persian history and administration."
+    legacy: "Author of 'Don Juan of Persia: A Shi'ah Catholic', providing Europe with one of its first comprehensive eye-witness accounts of Safavid Persian history and administration.",
+    imageUrl: "/oruj_beg.webp"
   },
   {
     id: "fath_ali_shah",
@@ -315,7 +319,8 @@ export const famousFigures: FamousFigure[] = [
     branch: "Qajar Oghuz",
     quote: "A kingdom is maintained by the sword, but its memory is preserved by the arts and the chronicle of its dynasties.",
     bio: "Fath-Ali Shah was the second Qajar king of Iran. The Qajars were an Oghuz Turkic tribe who rose to power following the fall of the Safavids. His reign was marked by significant diplomatic encounters with Europe and the Russo-Persian wars. He was a great patron of the arts, leading to a major revival of Persian court painting and literature.",
-    legacy: "Standardized the Qajar dynasty's administration and oversaw a major cultural renaissance in Iran, leaving behind iconic monuments and court portraitures."
+    legacy: "Standardized the Qajar dynasty's administration and oversaw a major cultural renaissance in Iran, leaving behind iconic monuments and court portraitures.",
+    imageUrl: "/fath_shah.webp"
   },
   {
     id: "javad_khan",
@@ -326,6 +331,7 @@ export const famousFigures: FamousFigure[] = [
     branch: "Qajar Oghuz / Qezelbash",
     quote: "Ganja is my homeland, and its keys shall only be surrendered when my dead body is dragged from its battlements.",
     bio: "Javad Khan-e Qajar was the last sovereign ruler of the Ganja Khanate in Azerbaijan (Caucasus). Belonging to the Qajar branch of the Oghuz Turks, he was a staunch defender against Tsarist Russian expansion. During the Russian Siege of Ganja in 1804, Javad Khan refused to surrender the fortress, replying famously that he would die defending his homeland. He was killed on the city walls during the final assault.",
-    legacy: "Revered as a national hero of Azerbaijan for his valiant resistance against imperial expansion and his defense of Ganja."
+    legacy: "Revered as a national hero of Azerbaijan for his valiant resistance against imperial expansion and his defense of Ganja.",
+    imageUrl: "/javad_khan.jpg"
   }
 ];
